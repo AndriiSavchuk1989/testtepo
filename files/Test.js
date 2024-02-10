@@ -39,3 +39,16 @@ for (let i=0; i < 5; i++) {
         console.log("i from timeout", i)
     }, i*1000);
 }
+
+let promise = new Promise(function(resolve, reject) {
+    setTimeout(() => resolve("Success"), 1000);
+    setTimeout(() => reject("Error"), 100);
+});
+
+console.log(promise)
+promise.then(
+    console.log(promise),
+    result => console.log(result),
+    error => console.log(error),
+    console.log(promise)
+);
