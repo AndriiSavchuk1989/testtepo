@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "eslint": "eslint *.js"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
+  }
+}
