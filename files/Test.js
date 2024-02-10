@@ -33,3 +33,9 @@ console.log(arr[1]())
 console.log(arr[2]())
 console.log(arr[3]())
 console.log(arr[4]())
+
+for (let i=0; i < 5; i++) {
+    setTimeout(() => {
+        console.log("i from timeout", i)
+    }, i*1000);
+}
